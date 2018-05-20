@@ -1,0 +1,51 @@
+
+.wrap {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    /*主軸變成橫的*/
+    flex-direction: row;
+    /*flex內的第一層子元素集中置中*/
+    justify-content:center;
+  }
+  h1{
+    text-align: center;
+  }
+  /*700px以下就...*/
+  @media (max-width: 700px) {
+    .wrap {
+  
+      /*主軸變成垂直*/
+      flex-direction: column;
+  
+    }
+  }
+  .clumn {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*   flex-direction和flex-wrap也可以合併寫成這樣 */
+    /*   flex-flow: column wrap; */
+    width: 300px;
+  }
+  /*700px以下就...*/
+  @media (max-width: 700px) {
+    .clumn {
+      width: 90%;
+      margin: auto;
+    }
+  }
+  .item_box{
+    color:#fff;
+    margin-bottom: 10px;
+    
+    padding: 0px;
+  }
+  img{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+  }

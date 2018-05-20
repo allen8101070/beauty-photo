@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表特照片牆</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+</head>
+<body>
+    <h1>表特照片牆</h1>
+    <div class="wrap" id="app">
+        <div class="clumn">
+            <div class="item" v-for="item in array1">
+                <div class="item_box">
+                    <img v-bind:src="item.src" alt="表特照片">
+                </div>
+            </div>
+        </div>
+        <div class="clumn">
+            <div class="item" v-for="item in array2">
+                <div class="item_box">
+                    <img v-bind:src="item.src" alt="表特照片">
+                </div>
+            </div>
+        </div>
+        <div class="clumn">
+            <div class="item" v-for="item in array3">
+                <div class="item_box">
+                    <img v-bind:src="item.src" alt="表特照片">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
